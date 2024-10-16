@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.heading{
+  text-align: center;
+  border-radius: none;
+  padding: 20px;
+  background-color: rgb(86, 86, 255);
+  
+  transition-duration: all 0.1s ease;
+
+  animation: identifier 1s ease 1 0s infinite forwards;
+}
+
+
+.parentContainer{
+width:100%;
+height:100vh;
+overflow: scroll;
+display: flex;
+padding: 15px;
+justify-content: center;
+background-color: rgb(86, 86, 255);
+text-align: center;
+border-radius: none;
+flex-wrap: wrap;
+}
+
+.childContainer{
+  width:300px;
+  height:350px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(200, 233, 247);
+  padding: 15px;
+  box-shadow: rgba(222, 104, 184, 0.1);
+  margin: 10px;
+  transition-duration: all 0.1s ease;
+  border: 3px solid white;
+  animation: identifier 1s ease 1 0s infinite forwards;
+}
+.childContainer:hover{
+  border: 3px solid purple;
+  box-shadow: rgba(0, 0, 0, 0.2);
+}
+.imageContainer {
+  width: 250px; /* Adjust the container size */
+  height: 200px;
+  overflow: hidden; /* Ensures image doesn't overflow */
+  position: relative;
+}
+
+.imageContainer img,
+.imageContainer :global(img) {
+  width: 100%; /* Scale image to fit the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Optional: Crop to fit the container */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+
+/* Optional: Ensure images are responsive */
+.imageContainer img {
+  max-width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded corners for the image */
+} */
+
+.title{
+  font-size: 40px;
+  text-shadow:blue;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 15px;
+  margin-top: 3px;
+}
+.description{
+font-size: 13px;
+}
+.readmore{
+  width: 40%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: aquamarine;
+  border: 1px solid blueviolet;
+  font-size: 12px;
+  color: black;
+  padding: auto;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  text-align: center;
+}
+
+.readmore:hover {
+  color: rgb(55, 7, 100);
+  border: 1px solid rgb(90, 23, 153);
+  box-shadow: 0 2px 4px rgba(0, 0,0,0.2);
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 450px) {
+  .childContainer{
+    background-color: antiquewhite  ;
+    width: 90%;
+  }
+}
